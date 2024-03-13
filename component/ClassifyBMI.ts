@@ -1,7 +1,4 @@
-import Image from "next/image";
-
-export default function Home() {
-  const  classifyBMI = (bmi: number, country: string): string  =>{
+export const  classifyBMI = (bmi: number, country: string): string  =>{
     if (country.toLowerCase() === 'việt nam') {
         if (bmi < 18.5) {
             return 'Nhẹ cân';
@@ -24,9 +21,6 @@ export default function Home() {
 }
 
 
-  return(
-    <div>
-      {classifyBMI(22.3, 'who')}
-    </div>
-  )
+export const sum = (a : number, b : number) : number=> {
+    return a 
 }
